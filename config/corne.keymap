@@ -12,7 +12,7 @@
         retro-tap;
 };
 
-/ {;
+/ {
         rp: require_prior_idle {
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
