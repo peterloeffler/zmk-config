@@ -45,36 +45,36 @@
                 };
                 sym {
 // ╭─────┬─────┬─────┬─────┬─────╮        ╭─────┬─────┬─────┬─────┬─────╮
-// │     │     │     │     │     │        │  [{ │  (  │  ↑  │  )  │  ]} │
+// │  !  │  _  │  -_ │  +  │  =+ │        │  [{ │  (  │  ↑  │  )  │  ]} │
 // ├─────┼─────┼─────┼─────┼─────┤        ├─────┼─────┼─────┼─────┼─────┤
-// │  @ ⇧│  ` ⌃│  * ⌥│  ~ ⌘│     │   L1   │  `~ │  ← ⌘│  ↓ ⌥│  → ⌃│  '"⇧│
+// │  @ ⇧│  `~⌃│  * ⌥│  ~ ⌘│  #  │   L1   │  {  │  ← ⌘│  ↓ ⌥│  → ⌃│  } ⇧│
 // ├─────┼─────┼─────┼─────┼─────┤        ├─────┼─────┼─────┼─────┼─────┤
-// │  ¹ │  ² │  ³ │  ⁴ │  ⁵ │        │     │  ⎋  │     │     │  \| │
+// │  &  │  %  │  $  │  ^  │     │        │     │  "  │  '" │  |  │  \| │
 // ╰─────┴─────┼─────┼─────┼─────┤        ├─────┼─────┼─────┼─────┴─────╯
 //             │  ⌦  │  ⎋  │  ⏎  │        │  ␣  │  ↹  │  ⌦  │
 //             ╰─────┴─────┴─────╯        ╰─────┴─────┴─────╯
                         bindings = <
-&none   &none           &none           &none           &none           &none                   &kp LBKT        &kp LPAR        &kp UP          &kp RPAR        &kp RBKT        &none
-&none   &mt LSHFT AT    &mt LCTRL GRAVE &mt LALT STAR   &mt LMETA TILDE &none                   &kp GRAVE       &kp LEFT        &kp DOWN        &kp RIGHT       &mt RSHFT APOS  &none
-&none   &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4            &none           &kp ESC         &none           &none           &kp BSLH        &none
+&none   &kp EXCL        &kp UNDER       &kp MINUS       &kp PLUS        &kp EQUAL               &kp LBKT        &kp LPAR        &kp UP          &kp RPAR        &kp RBKT        &none
+&none   &mt LSHFT AT    &mt LCTRL GRAVE &mt LALT STAR   &mt LMETA TILDE &kp HASH                &kp LBRC        &mt RMETA LEFT  &mt RALT DOWN   &mt RCTRL RIGHT &mt RSHFT RBRC  &none
+&none   &kp AMPS        &kp PRCNT       &kp DOLLAR      &kp CARET       &none                   &none           &kp DQT         &kp APOS        &kp PIPE        &kp BSLH        &none
                                         &kp DEL         &kp ESC         &kp RET                 &kp SPACE       &kp TAB         &kp DEL
                         >;
                 };
                 num {
 // ╭─────┬─────┬─────┬─────┬─────╮        ╭─────┬─────┬─────┬─────┬─────╮
-// │ F9  │ F10 │ F11 │ F12 │     │        │  -_ │  7& │  8* │  9( │  =+ │
+// │ F9  │ F10 │ F11 │ F12 │  ¹ │        │  ⁴ │  7& │  8* │  9( │  =+ │
 // ├─────┼─────┼─────┼─────┼─────┤        ├─────┼─────┼─────┼─────┼─────┤
-// │ F5 ⇧│ F6 ⌃│ F7 ⌥│ F8 ⌘│     │   L2   │     │  4$⌘│  5%⌥│  6^⌃│  " ⇧│
+// │ F5 ⇧│ F6 ⌃│ F7 ⌥│ F8 ⌘│  ² │   L2   │  ⁵ │  4$⌘│  5%⌥│  6^⌃│  '"⇧│
 // ├─────┼─────┼─────┼─────┼─────┤        ├─────┼─────┼─────┼─────┼─────┤
-// │ F1  │ F2  │ F3  │ F4  │     │        │  0) │  1! │  2@ │  3# │     │
+// │ F1  │ F2  │ F3  │ F4  │  ³ │        │  /? │  1! │  2@ │  3# │  -_ │
 // ╰─────┴─────┼─────┼─────┼─────┤        ├─────┼─────┼─────┼─────┴─────╯
-//             │  ⌦  │  ⎋  │  ⏎  │        │  ␣  │  ↹  │  ⌦  │
+//             │  ⌦  │  ⎋  │  ⏎  │        │  ␣  │  0) │  ⌦  │
 //             ╰─────┴─────┴─────╯        ╰─────┴─────┴─────╯
                         bindings = <
-&none   &kp F9          &kp F10         &kp F11         &kp F12         &none                   &kp MINUS       &kp N7          &kp N8          &kp N9          &kp EQUAL       &none
-&none   &mt LSHFT F5    &mt LCTRL F6    &mt LALT F7     &mt LMETA F8    &none                   &none           &mt RMETA N4    &mt RALT N5     &mt RCTRL N6    &mt LSHFT DQT   &none
-&none   &kp F1          &kp F2          &kp F3          &kp F4          &none                   &kp N0          &kp N1          &kp N2          &kp N3          &none  &none
-                                        &kp DEL         &kp ESC         &kp RET                 &kp SPACE       &kp TAB         &kp DEL
+&none   &kp F9          &kp F10         &kp F11         &kp F12         &bt BT_SEL 0            &bt BT_SEL 3    &kp N7          &kp N8          &kp N9          &kp EQUAL       &none
+&none   &mt LSHFT F5    &mt LCTRL F6    &mt LALT F7     &mt LMETA F8    &bt BT_SEL 1            &bt BT_SEL 4    &mt RMETA N4    &mt RALT N5     &mt RCTRL N6    &mt LSHFT APOS  &none
+&none   &kp F1          &kp F2          &kp F3          &kp F4          &bt BT_SEL 2            &kp FSLH        &kp N1          &kp N2          &kp N3          &kp MINUS       &none
+                                        &kp DEL         &kp ESC         &kp RET                 &kp SPACE       &kp N0          &kp DEL
                         >;
                 };
         };
