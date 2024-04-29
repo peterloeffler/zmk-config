@@ -23,6 +23,17 @@
                 bindings = <&kp>, <&kp>;
         };
 
+        macros {
+                ca: ca {
+                        compatible = "zmk,behavior-macro-one-param";
+                        #binding-cells = <1>; // Must be 1
+                        bindings =
+                                <&macro_press &kp LCTRL &kp LALT>,
+                                <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>,
+                                <&macro_release &kp LALT &kp LCTRL>;
+                };
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -56,7 +67,7 @@
                         bindings = <
 &none   &kp EXCL        &kp UNDER       &kp MINUS       &kp PLUS        &kp EQUAL               &kp LBKT        &kp LPAR        &kp UP          &kp RPAR        &kp RBKT        &none
 &none   &mt LSHFT AT    &mt LCTRL GRAVE &mt LALT STAR   &mt LMETA TILDE &kp HASH                &kp LBRC        &mt RMETA LEFT  &mt RALT DOWN   &mt RCTRL RIGHT &mt RSHFT RBRC  &none
-&none   &kp AMPS        &kp PRCNT       &kp DOLLAR      &kp CARET       &none                   &none           &kp DQT         &kp APOS        &kp PIPE        &kp BSLH        &none
+&none   &kp AMPS        &kp PRCNT       &kp DOLLAR      &kp CARET       &kp LC(LA(SEMI))        &ca COMMA       &kp DQT         &kp APOS        &kp PIPE        &kp BSLH        &none
                                         &kp DEL         &kp ESC         &kp RET                 &kp SPACE       &kp TAB         &kp DEL
                         >;
                 };
