@@ -62,18 +62,18 @@
                 };
                 num {
 // ╭─────┬─────┬─────┬─────┬─────╮        ╭─────┬─────┬─────┬─────┬─────╮
-// │ F9  │ F10 │ F11 │ F12 │    │        │  ▲  │  7& │  8* │  9( │  =+ │
+// │ F9  │ F10 │ F11 │ F12 │    │        │  ▲  │  7& │  8* │  9( │  ▼  │
 // ├─────┼─────┼─────┼─────┼─────┤        ├─────┼─────┼─────┼─────┼─────┤
-// │ F5 ⇧│ F6 ⌃│ F7 ⌥│ F8 ⌘│     │   L2   │  ▼  │  4$ │  5% │  6^ │  '" │
+// │ F5 ⇧│ F6 ⌃│ F7 ⌥│ F8 ⌘│  ⌂  │   L2   │  +  │  4$ │  5% │  6^ │  -  │
 // ├─────┼─────┼─────┼─────┼─────┤        ├─────┼─────┼─────┼─────┼─────┤
-// │ F1  │ F2  │ F3  │ F4  │     │        │  /? │  1! │  2@ │  3# │  -_ │
+// │ F1  │ F2  │ F3  │ F4  │  ␃  │        │  *  │  1! │  2@ │  3# │  /  │
 // ╰─────┴─────┼─────┼─────┼─────┤        ├─────┼─────┼─────┼─────┴─────╯
 //             │    ⁰│  ⎋  │  ⏎  │        │  ␣  │  0) │  ⌦  │
 //             ╰─────┴─────┴─────╯        ╰─────┴─────┴─────╯
                         bindings = <
-&none &kp F9            &kp F10         &kp F11          &kp F12          &bt BT_NXT              &kp PG_UP        &kp N7           &kp N8           &kp N9           &kp EQUAL       &none
-&none &mt LSHFT F5      &mt LCTRL F6    &mt LALT F7      &mt LMETA F8     &none                   &kp PG_DN        &kp N4           &kp N5           &kp N6           &kp APOS        &none
-&none &kp F1            &kp F2          &kp F3           &kp F4           &none                   &kp FSLH         &kp N1           &kp N2           &kp N3           &kp MINUS       &none
+&none &kp F9            &kp F10         &kp F11          &kp F12          &bt BT_NXT              &kp PG_UP        &kp N7           &kp N8           &kp N9           &kp PG_DN       &none
+&none &mt LSHFT F5      &mt LCTRL F6    &mt LALT F7      &mt LMETA F8     &kp HOME                &kp KP_PLUS      &kp N4           &kp N5           &kp N6           &kp KP_MINUS    &none
+&none &kp F1            &kp F2          &kp F3           &kp F4           &kp END                 &kp KP_MULTIPLY  &kp N1           &kp N2           &kp N3           &kp KP_DEVIDE   &none
                                         &to 0            &kp ESC          &kp RET                 &kp SPACE        &kp N0           &kp DEL
                         >;
                 };
