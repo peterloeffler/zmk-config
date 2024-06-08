@@ -32,14 +32,14 @@
 // ├─────┼─────┼─────┼─────┼─────┤        ├─────┼─────┼─────┼─────┼─────┤
 // │  A ⇧│  S ⌃│  D ⌥│  F ⌘│  G  │   L0   │  H  │  J ⌘│  K ⌥│  L ⌃│  ;:⇧│
 // ├─────┼─────┼─────┼─────┼─────┤        ├─────┼─────┼─────┼─────┼─────┤
-// │  Z  │  X  │  C  │  V  │  B  │        │  N  │  M  │  ,< │  .> │  /? │
+// │  Z ⇧│  X  │  C ²│  V ¹│  B  │        │  N  │  M ¹│  ,<²│  .> │  /?⇧│
 // ╰─────┴─────┼─────┼─────┼─────┤        ├─────┼─────┼─────┼─────┴─────╯
 //             │    ¹│  ⎋ ²│  ⏎ ¹│        │  ␣ ¹│  ↹ ²│  ⌫  │
 //             ╰─────┴─────┴─────╯        ╰─────┴─────┴─────╯
                         bindings = <
 &none &kp Q            &kp W            &kp E            &kp R            &kp T                   &kp Y            &kp U            &kp I            &kp O            &kp P           &none
 &none &rp LSHFT A      &rp LCTRL S      &rp LALT D       &rp LMETA F      &kp G                   &kp H            &rp RMETA J      &rp RALT K       &rp RCTRL L      &rp RSHFT SEMI  &none
-&none &kp Z            &kp X            &kp C            &kp V            &kp B                   &kp N            &kp M            &kp COMMA        &kp DOT          &kp FSLH        &none
+&none &rp LSHFT Z      &kp X            &lt 2 C          &lt 1 V          &kp B                   &kp N            &lt 1 M          &lt 2 COMMA      &kp DOT          &rp RSHFT FSLH  &none
                                         &to 1            &lt 2 ESC        &lt 1 RET               &lt 1 SPACE      &lt 2 TAB        &kp BSPC
                         >;
                 };
